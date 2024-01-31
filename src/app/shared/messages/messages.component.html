@@ -1,1 +1,8 @@
-<p>messages works!</p>
+<h1 mat-dialog-title>Confirmation Message</h1>
+<div mat-dialog-content>
+  <p>{{data.msg}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="btn" cdkFocusInitial>Ok</button>
+</div>
